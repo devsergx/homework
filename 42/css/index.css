@@ -1,0 +1,80 @@
+.page {
+  font-family: Arial, sans-serif;
+}
+
+.page__body {
+  min-width: 380px
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* form start */
+.form {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 400px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.form__title {
+  margin: 0 0 15px 0;
+}
+
+.form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form__input {
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.form__textarea {
+  margin-bottom: 5px;
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  max-height: 200px;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  resize: vertical;
+  border: 2px solid black;
+}
+
+.form__label-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form__button {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: inherit;
+  cursor: pointer;
+}
+/* form end */
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html css</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-image.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="page__body">
+    <form class="form">
+      <h2 class="form__title">Ваши личные данные</h2>
+      <fieldset class="form__group">
+        <label class="form__label" for="user-name">Ваше имя</label>
+        <input
+          class="form__input"
+          type="text"
+          id="user-name"
+          name="user-name"
+          required
+          placeholder="Имя"
+        />
+
+        <label class="form__label" for="user-age">Ваш возраст</label>
+        <input
+          class="form__input"
+          type="number"
+          id="user-age"
+          name="user-age"
+          inputmode="numeric"
+          required
+          placeholder="Возраст"
+        />
+
+        <label class="form__label" for="user-phone">Ваш номер телефона</label>
+        <input
+          class="form__input"
+          type="tel"
+          id="user-phone"
+          inputmode="tel"
+          name="user-phone"
+          required
+          placeholder="Номер телефона"
+        />
+
+        <label class="form__label" for="user-email">Ваша почта</label>
+        <input
+          class="form__input"
+          type="email"
+          id="user-email"
+          name="user-email"
+          inputmode="email"
+          required
+          placeholder="Почта"
+        />
+      </fieldset>
+      <fieldset class="form__group">
+        <label class="form__label" for="user-message">Сообщение</label>
+        <textarea
+          class="form__textarea"
+          name="user-message"
+          id="user-message"
+          required
+          placeholder="Ваше сообщение"
+        ></textarea>
+        <label class="form__label-checkbox">
+          <input class="form__input-checkbox" type="checkbox" required />
+          Я принимаю правила
+        </label>
+      </fieldset>
+      <button class="form__button" type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
