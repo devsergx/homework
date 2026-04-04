@@ -20,7 +20,10 @@
 }
 
 .form__group-title {
+  display: block;
+  text-align: center;
   margin: 0 0 15px 0;
+  font-size: 24px;
 }
 
 .form__group {
