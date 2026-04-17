@@ -1,0 +1,12 @@
+/* globals */
+@import url("./normalize.css");
+@import url("./fonts.css");
+@import url("./globals.css");
+
+/* variables */
+@import url("./variables.css");
+
+
+/* componets */
+@import url("./components/header.css");
+@import url("./components/footer.css");
