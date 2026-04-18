@@ -1,0 +1,32 @@
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0;
+  border-bottom: 1px solid #d3cbd9;
+}
+
+.contact {
+  text-align: right;
+}
+
+.contact__text {
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+}
+
+.phone {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+  transition: color var(--transition-time);
+}
+
+.phone:hover {
+  color: var(--accent-color);
+}
