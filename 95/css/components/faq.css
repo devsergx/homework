@@ -1,0 +1,133 @@
+.faq {
+	position: relative;
+}
+
+.faq::before {
+	position: absolute;
+	top: 360px;
+	left: 0;
+	content: "";
+	width: calc(43% - 100px);
+	height: 48px;
+	display: inline-block;
+	background-image: url(../../images/hero-decor-img.svg);
+	z-index: -1;
+}
+
+@media (width <= 992px) {
+	.faq::before {
+		display: none;
+	}
+}
+
+.faq__title {
+	margin-bottom: 40px;
+}
+
+.faq__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	gap: 28px;
+}
+
+@media (width <= 992px) {
+	.faq__wrapper {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+.faq__content {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+}
+
+@media (width > 992px) {
+	.faq__content {
+		max-width: 492px;
+	}
+}
+
+.faq__content-img {
+	width: 100%;
+}
+
+.faq__accordion-item {
+	border-block: 1px solid #d3cbd9;
+}
+
+.faq__accordion-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.faq__accordion-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 10px;
+	padding: 20px;
+	font-family: "Oswald";
+	font-weight: 500;
+	line-height: 1.15;
+	text-transform: uppercase;
+	color: #2c332f;
+	list-style: none;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media (width > 576px) {
+	.faq__accordion-header {
+		font-size: 24px;
+	}
+}
+@media (width <= 576px) {
+	.faq__accordion-header {
+		font-size: clamp(20px, 0.7836rem + 1.99vw, 24px);
+	}
+}
+
+.faq__accordion-header::-webkit-details-marker {
+	display: none;
+}
+
+.faq__accordion-header::after {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 22px;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	background-image: url(../../images/arrow-down-icon.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: transform var(--transition-time);
+}
+
+.faq__accordion-item[open] .faq__accordion-header::after {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.faq__accordion-content {
+	padding: 0 20px 20px;
+	line-height: 1.3;
+	color: #535755;
+}

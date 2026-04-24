@@ -1,0 +1,118 @@
+.page {
+	font-family: "Ubuntu", "Oswald", sans-serif;
+	font-weight: 400;
+}
+
+.page__body {
+	min-width: 375px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+@media (width > 992px) {
+	.container {
+		max-width: 1250px;
+	}
+}
+
+@media (width < 992px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (width < 768px) {
+	.container {
+		max-width: 576px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a,
+button {
+	outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+	outline: 2px solid var(--accent-color);
+	outline-offset: 3px;
+}
+
+.section {
+	margin-bottom: 140px;
+}
+
+@media (width < 768px) {
+	.section {
+		margin-bottom: 80px;
+	}
+}
+
+.title-h2 {
+	font-weight: 600;
+	line-height: 1.15;
+	text-transform: uppercase;
+	color: #2c332f;
+}
+
+@media (width > 992px) {
+	.title-h2 {
+		font-size: 48px;
+	}
+}
+
+@media (width < 992px) {
+	.title-h2 {
+		font-size: clamp(35px, 1.6937rem + 2.107vw, 48px);
+		text-align: center;
+	}
+}
